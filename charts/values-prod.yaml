@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: image-registry.openshift-image-registry.svc:5000/fuse-pipelines/spring-boot-mongo-docker-git
+  repository: default-route-openshift-image-registry.apps.ocp4.imss.work/fuse-pipelines/spring-boot-mongo-docker-git
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: v3
