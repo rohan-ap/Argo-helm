@@ -13,7 +13,7 @@ spec:
         app: my-app
     spec:
       imagePullSecrets:
-        - name: dockersecret
+        - name: dockersecret-1
       containers:
         - name: my-app
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
