@@ -12,14 +12,14 @@ spec:
       labels:
         app: my-app
     spec:
-#      affinity:
- ##        requiredDuringSchedulingIgnoredDuringExecution:
-   #         nodeSelectorTerms:
-    #        - matchExpressions:
-     #         - key: environment
-      #          operator: In
-       #         values:
-        #         - dev
+      affinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: environment
+                operator: In
+                values:
+                 - dev
       imagePullSecrets:
         - name: dockersecret-1
       containers:
