@@ -19,11 +19,11 @@ spec:
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           ports:
             - containerPort: 8080
-##          volumeMounts:
-####            - name: registry-cert
-##              mountPath: "/etc/registry-certs"
-#              readOnly: true
- #     volumes:
-#        - name: registry-cert
-  #        secret:
- #          secretName: registry-cert-secret
+          volumeMounts:
+            - name: registry-cert
+              mountPath: "/etc/registry-certs"
+              readOnly: true
+      volumes:
+        - name: registry-cert
+          secret:
+           secretName: registry-cert-secret
