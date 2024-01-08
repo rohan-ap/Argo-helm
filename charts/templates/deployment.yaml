@@ -29,11 +29,11 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          volumeMounts:
-            - name: registry-cert
-              mountPath: "/etc/pki/ca-trust/source/anchors"
-              readOnly: true
-      volumes:
-        - name: registry-cert
-          secret:
-           secretName: registry-cert-secret
+#          volumeMounts:
+ #           - name: registry-cert
+  #            mountPath: "/etc/pki/ca-trust/source/anchors"
+   #           readOnly: true
+    #  volumes:
+     #   - name: registry-cert
+      #    secret:
+       #    secretName: registry-cert-secret
