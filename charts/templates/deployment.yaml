@@ -22,7 +22,7 @@ spec:
             - containerPort: 8080
           volumeMounts:
             - name: registry-cert
-              mountPath: "/etc/registry-certs"
+              mountPath: "/etc/pki/ca-trust/source/anchors"
               readOnly: true
       volumes:
         - name: registry-cert
