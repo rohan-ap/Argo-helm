@@ -20,7 +20,7 @@ spec:
               - key: environment
                 operator: In
                 values:
-                - production
+                - uat
       imagePullSecrets:
         - name: dockersecret-1
       containers:
