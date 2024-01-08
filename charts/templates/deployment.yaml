@@ -16,7 +16,7 @@ spec:
         - name: dockersecret-1
       containers:
         - name: my-app
-          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          image: {{ .Values.image.repository }}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
